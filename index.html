@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TSLmusic</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link
+href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+rel="stylesheet"
+/>
+</head>
+<body>
+<header class="header">
+    <a href="#home" class="logo">
+        TSL<span>Music</span>
+      </a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#music">Music</a>
+        <a href="#favourite">Favourite</a>
+        
+      </nav>
+      <button class="gradient-btn" 
+      onclick="document.getElementById('music').scrollIntoView({behavior: 'smooth'});">
+        Songs</button>
+    </header>
+</header>
+<section class="home" id="home">
+    <div class="home-content">
+      <h1>Welcome, to<span>TSL Music</span></h1>
+      <h3>Enjoy the <span>Music from your soul</span></h3>
+      <p>Music is part of life. Feel free to listen your favourite songs on 'TSLmusic'. 
+        </p>
+    </div>
+    <div class="btn-group">
+        <a href="#music" class="btn">Music</a>
+        <a href="#favourite" class="btn">Favourite</a>
+      </div>
+   </section>
+   <section class="music"id="music">
+    <h2 class="heading">Songs</h2>
+    <div class="music-box">
+      <div class="music-card">
+        <img src="Peaceful Piano.jpg" alt="">
+        <h3>song name</h3>
+        <p>Lorem ipsum dolor sit amet, consecte.</p>
+           <div class="btn" onclick="playSong(1)">Play Song </div>
+           <audio id='audio1'src="song1.mp3" ></audio>
+      </div>
+      <div class="music-card">
+        <img src="Rock Classics.jpg" alt="">
+        <h3>song name</h3>
+        <p>Lorem ipsum dolor sit amet, </p>
+           <div class="btn" onclick="playSong(2)">Play Song </div>
+           <audio id='audio2'src="song2.mp3" ></audio>
+      </div>
+      <div class="music-card">
+        <img src="RapCaviar.jpg" alt="">
+        <h3>song name</h3>
+        <p>Lorem ipsum dolor sit amet,</p>
+           <div class="btn" onclick="playSong(3)">Play Song </div>
+           <audio id='audio3'src="song3.mp3" ></audio>
+      </div>
+      <div class="music-card">
+        <img src="Reading Adventure.jpg" alt="">
+        <h3>song name</h3>
+        <p>Lorem ipsum dolor sit amet, </p>
+           <div class="btn" onclick="playSong(4)">Play Song </div>
+           <audio id='audio4'src="song4.mp3" ></audio>
+      </div>
+      <div class="music-card">
+        <img src="Chill Hits.jpg" alt="">
+        <h3>song name</h3>
+        <p>Lorem ipsum dolor sit amet, </p>
+           <div class="btn" onclick="playSong(5)">Play Song </div>
+           <audio id='audio5'src="song5.mp3" ></audio>
+      </div>
+      <div class="music-card">
+        <img src="Today's Top Hits.jpg" alt="">
+        <h3>song name</h3>
+        <p>Lorem ipsum dolor sit amet, </p>
+           <div class="btn" onclick="playSong(6)">Play Song </div>
+           <audio id='audio6'src="song6.mp3" ></audio>
+      </div>
+    </div>
+  </section>
+  <section class="favourite" id="favourite">
+    <h2 class="heading">Favourite Songs</h2>
+    <div class="container">
+      <h2>Favourite Songs</h2>
+      <div class="song-list" id="favourite-songs">
+          <!-- Buttons to play each favourite song -->
+          <div class="song-item" onclick="playSongs('favourite', 1)">Favourite Song 1</div>
+          <div class="song-item" onclick="playSongs('favourite', 2)">Favourite Song 2</div>
+          <div class="song-item" onclick="playSongs('favourite', 3)">Favourite Song 3</div>
+          <div class="song-item" onclick="playSongs('favourite', 4)">Favourite Song 4</div>
+          <div class="song-item" onclick="playSongs('favourite', 5)">Favourite Song 5</div>
+          <div class="song-item" onclick="playSongs('favourite', 6)">Favourite Song 6</div>
+      </div>
+  
+      <!-- Audio elements for each favourite song (hidden initially) -->
+      <audio id="favourite-audio1" src="song6.mp3"></audio>
+      <audio id="favourite-audio2" src="song8.mp3"></audio>
+      <audio id="favourite-audio3" src="song9.mp3"></audio>
+      <audio id="favourite-audio4" src="song10.mp3"></audio>
+      <audio id="favourite-audio5" src="song11.mp3"></audio>
+      <audio id="favourite-audio6" src="song12.mp3"></audio>
+  </div>
+  </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
